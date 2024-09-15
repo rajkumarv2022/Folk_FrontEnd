@@ -15,7 +15,7 @@ export default function ALoginpage() {
                 <input type="text" className='border-2 border-gray-200 w-full max-w-[350px] outline-none rounded-md px-4 py-3' placeholder='Email'/>
                 <input type="password" className='border-2 border-gray-200 w-full max-w-[350px] outline-none rounded-md px-4 py-3' placeholder='Password'/>
                 <button className='w-full max-w-[350px] py-3 rounded-md bg-blue-600 text-white'>Login</button>
-                <span>Don't have an account? <Link to='/signup' className='text-blue-600'>Signup</Link></span>
+                <span>Don't have an account? <Link to='/asignup' className='text-blue-600'>Signup</Link></span>
             </div>
 
             
