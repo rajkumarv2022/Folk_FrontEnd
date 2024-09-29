@@ -3,7 +3,7 @@ import React from 'react'
 export default function MainPage() {
   return (
     <div>
-      <div className='w-full h-screen bg-red-100'>
+      <div className='w-full h-screen'>
         <div id='nbar' className='flex flex-col justify-around bg-gray-100 w-full h-40 py-4'>
             <div className='flex flex-row justify-around'>
               <button className='border text-white rounded-sm w-32 py-2 bg-blue-400'>Folk</button>
@@ -23,13 +23,65 @@ export default function MainPage() {
               <button className='border text-white rounded-sm w-32 py-2 bg-blue-400'>Profile</button>
             </div>
         </div>
-        <div id='main' className='bg-blue-100 w-full h-full'>
-            <div id='fnav' className='bg-green-100 w-full h-full max-w-32'></div>
 
-            <div id='content' className='bg-red-100'>
+        <div id='main' className='flex flex-row w-full h-full'>
+            <div id='fnav' className='w-full h-full max-w-32 bg-green-100'></div>
 
-              <div id='prod'>
-                
+            <div id='content' className='mt-10 ml-10 w-full'>
+
+
+              <div id='singers' className='flex flex-col w-full gap-4'>
+
+                <h1 className='font-bold text-2xl'>Singers</h1>
+
+                <div id='cursforsinger' className='flex flex-row items-center justify-between mr-8'>
+
+                  <div id='prod1' className='flex flex-row border-2 border-black'>
+                    <div>
+                      <img className='w-64 h-64' src="https://t4.ftcdn.net/jpg/02/54/28/89/240_F_254288948_hy4c6gqgNKFDSwEJaztPGT72UvAMEejm.jpg" alt="" />
+                    </div>
+                    <div className='w-80 flex flex-col items-center justify-around'>
+                      <div className=''>
+                        <pre>
+                          <p className=''> <span className='font-semibold'>Name</span>        : <span>product1pwnfjbdsvbdfv</span> </p>
+                          <p className=''> <span className='font-semibold'>Proffesion</span>  : <span>product1</span> </p>
+                          <p className=''> <span className='font-semibold'>Gender</span>      : <span>product1</span> </p>
+                          <p className=''> <span className='font-semibold'>Status</span>      : <span>None</span> </p>
+                          <p className=''> <span className='font-semibold'>Ratting</span>     : <span>product1</span> </p>
+                          <p className=''> <span className='font-semibold'>Price</span>       : <span>Rs <span>1000</span></span></p>
+                          <p className=''> <span className='font-semibold'>No of Days</span>  : <span><button>+</button> 1 <button>-</button></span> </p>
+                        </pre>
+                      </div>
+                      
+                      <button className='hover:bg-red-500 border-2 border-red-500 hover:border-white hover:text-white px-12 rounded-md py-2'>Book</button>
+
+                    </div>
+                  </div>
+
+                  <div id='prod2' className='flex flex-row border-2 border-black'>
+                    <div>
+                      <img className='w-64 h-64' src="https://t4.ftcdn.net/jpg/02/54/28/89/240_F_254288948_hy4c6gqgNKFDSwEJaztPGT72UvAMEejm.jpg" alt="" />
+                    </div>
+                    <div className='w-80 flex flex-col items-center justify-around'>
+                      <div className=''>
+                        <pre>
+                          <p className=''> <span className='font-semibold'>Name</span>        : <span>product1pwnfjbdsvbdfv</span> </p>
+                          <p className=''> <span className='font-semibold'>Proffesion</span>  : <span>product1</span> </p>
+                          <p className=''> <span className='font-semibold'>Gender</span>      : <span>product1</span> </p>
+                          <p className=''> <span className='font-semibold'>Status</span>      : <span>None</span> </p>
+                          <p className=''> <span className='font-semibold'>Ratting</span>     : <span>product1</span> </p>
+                          <p className=''> <span className='font-semibold'>Price</span>       : <span>Rs <span>1000</span></span></p>
+                          <p className=''> <span className='font-semibold'>No of Days</span>  : <span><button>+</button> 1 <button>-</button></span> </p>
+                        </pre>
+                      </div>
+                      
+                      <button className='hover:bg-red-500 border-2 border-red-500 hover:border-white hover:text-white px-12 rounded-md py-2'>Book</button>
+
+                    </div>
+                  </div>
+
+                </div>
+
               </div>
 
             </div>
