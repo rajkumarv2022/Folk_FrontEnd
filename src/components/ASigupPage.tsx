@@ -1,8 +1,10 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function ASignupPage() {
+
+    const navigate=useNavigate();
 
     const [email,setEmail]=useState('');
     const [password,setPassword]=useState('');
@@ -38,6 +40,8 @@ export default function ASignupPage() {
                     return;
                 }
                 alert("succesfully registerd");
+                navigate('/alogin');
+                //window.location.href="/alogin";
             }
             catch(err)
             {

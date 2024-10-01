@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function ALoginpage() {
+
+    
+
   return (
     <div id='par' className='flex flex-col w-full h-screen items-center justify-center'>
 
