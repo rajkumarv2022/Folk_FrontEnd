@@ -20,7 +20,7 @@ export default function App() {
           <Route path='/asignup' Component={ASignupPage}></Route>
           <Route path='/alogin' Component={ALoginpage}></Route>
           <Route path='/login/main' Component={MainPage}></Route>
-          <Route path='/alogin/amain' Component={AmainPage}></Route>
+          <Route path='/alogin/amain/:id' Component={AmainPage}></Route>
         </Routes>
       </Router>
 
