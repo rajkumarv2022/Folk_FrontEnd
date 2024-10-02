@@ -7,6 +7,7 @@ import ASignupPage from './components/ASigupPage'
 import ALoginpage from './components/ALoginpage'
 import MainPage from './components/MainPage'
 import AmainPage from './components/AmainPage'
+import CreateProd from './components/CreateProd'
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
           <Route path='/alogin' Component={ALoginpage}></Route>
           <Route path='/login/main' Component={MainPage}></Route>
           <Route path='/alogin/amain/:id' Component={AmainPage}></Route>
+          <Route path='/alogin/amain/:id/create' Component={CreateProd}></Route>
         </Routes>
       </Router>
 

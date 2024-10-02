@@ -1,6 +1,12 @@
 import React from 'react'
+import { Link, useParams } from 'react-router-dom'
 
 export default function AmainPage() {
+
+  const oid=useParams();
+  const id=oid.id;
+
+  console.log(id);
 
   return (
     <div>
@@ -30,6 +36,12 @@ export default function AmainPage() {
 
             <div id='content' className='flex flex-col gap-4 ml-40 w-full mt-44'>
 
+            <div id='anav' className='flex flex-row items-center justify-between w-full h-20'>
+
+              <Link to={`/alogin/amain/${id}/create`}><button className='border-2 hover:bg-green-400 border-green-400 hover:text-white rounded-sm w-32 py-2'>Create</button></Link>
+              <button className='border-2 hover:bg-green-400 border-green-400  hover:text-white rounded-sm w-32 py-2  mr-8'>History</button>
+
+            </div>
 
               <div id='singers' className='flex flex-col w-full gap-4'>
 
